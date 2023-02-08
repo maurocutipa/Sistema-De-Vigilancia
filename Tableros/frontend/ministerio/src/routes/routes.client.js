@@ -1,20 +1,20 @@
 import {AdminLayout} from "../layouts/AdminLayout"
 // import { Home } from "../pages/Client";
-import { HomeAdmin} from "../pages/Admin"; 
+import { HomeAdmin,UserAdmin} from "../pages/Admin"; 
 import {LoginAdmin} from "../pages/Admin/LoginAdmin"
 
 
 
 const routerLogin = [
   {
-    path: "/admin",
+    path: "/",
     layout: AdminLayout,
     component: HomeAdmin,
   },
   {
-    path: "/",
+    path: "/admin/users",
     layout: AdminLayout,
-    component: HomeAdmin,
+    component: UserAdmin,
   },
 ];
 
